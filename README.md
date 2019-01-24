@@ -14,9 +14,11 @@ useradd -g mysql mysql
 mkdir -p /data/mariadb/conf
 mkdir -p /data/mariadb/logs
 mkdir -p /data/mariadb/run
+mkdir -p /data/mariadb/tmp
 
 chown -R mysql:mysql /data/mariadb/logs
 chown -R mysql:mysql /data/mariadb/run
+chown -R mysql:mysql /data/mariadb/tmp
 
 cd /data/mariadb
 tar xvf /data/downloads/mariadb-10.3.12-linux-systemd-x86_64.tar.gz -C .
